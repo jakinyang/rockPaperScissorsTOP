@@ -4,7 +4,7 @@ let winnerOutput = '';
 /* Variable that will hold value retrieved from button click event */
 let userChoice = '';
 
-/* Retrieving user choice */
+/* Retrieving user choice from button DOM event */
 
 // Variables to hold DOM buttons
 const rBtn = document.querySelector('#rock');
@@ -45,25 +45,25 @@ let computerChoice = () => {
 /* Game: takes in two choices and outputs the winner */
 const game = (compChoice, playerChoice) => {
   if (playerChoice === 'rock') {
-    if (computerChoice === 'paper') {
+    if (compChoice === 'paper') {
       return 'Computer wins!';
-    } else if (computerChoice === 'scissors') {
+    } else if (compChoice === 'scissors') {
       return 'Player wins!';
     } else {
       return 'Tie!';
     } 
   } else if (playerChoice === 'paper') {
-    if (computerChoice === 'scissors') {
+    if (compChoice === 'scissors') {
       return 'Computer wins!';
-    } else if (computerChoice === 'rock') {
+    } else if (compChoice === 'rock') {
       return 'Player wins!';
     } else {
       return 'Tie!';
     }
   } else if (playerChoice === 'scissors') {
-    if (computerChoice === 'rock') {
+    if (compChoice === 'rock') {
       return 'Computer wins!';
-    } else if (computerChoice === 'paper') {
+    } else if (compChoice === 'paper') {
       return 'Player wins!';
     } else {
       return 'Tie!';

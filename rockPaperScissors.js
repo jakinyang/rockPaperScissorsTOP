@@ -1,9 +1,27 @@
-
 /* Variable that holds output for winner that will be displayed in .winnerDisplay */
 let winnerOutput = '';
 
 /* Variable that will hold value retrieved from button click event */
 let userChoice = '';
+
+/* Retrieving user choice */
+
+// Variables to hold DOM buttons
+const rBtn = document.querySelector('#rock');
+const pBtn = document.querySelector('#paper');
+const sBtn = document.querySelector('#scissors');
+const btns = document.querySelectorAll('.button');
+
+// Function to output eventListener result to userChoice
+
+const getUserChoice = (e) => {
+  userChoice = e.target.textContent.toLowerCase();
+}
+
+// Adding event listeners
+btns.forEach(btn => {
+  btn.addEventListener('click', getUserChoice)
+})
 
 /* Var that holds value from computer choice generator */
 let computerChoice = () => {
@@ -52,3 +70,4 @@ const game = (compChoice, playerChoice) => {
     }
   }
 }
+

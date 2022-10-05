@@ -71,3 +71,10 @@ const game = (compChoice, playerChoice) => {
   }
 }
 
+/* Playgame function */
+
+const playGame = (computerChoice, userChoice) => {
+  winnerOutput = game(computerChoice, userChoice);
+  console.log(winnerOutput);
+}
+

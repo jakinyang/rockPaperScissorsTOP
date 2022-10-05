@@ -19,14 +19,3 @@ let computerChoice = () => {
       break;
   }
 }
-
-const radioInput = document.querySelectorAll('input')
-
-for (let input of radioInput) {
-  input.addEventListener("submit", () => {
-    userChoice = radioInput.value;
-  })
-}
-
-console.log(userChoice);
-console.log(computerChoice());

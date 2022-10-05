@@ -1,0 +1,145 @@
+/* Global */
+html {
+  background-color: whitesmoke;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  background-color: lightseagreen;
+
+}
+
+header h1 {
+  margin: 0;
+  color: whitesmoke;
+  font-size: 5em;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Main */
+main {
+  justify-content: center;
+  align-items: center;
+}
+
+.initial {
+  transform: scale(0);
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+}
+
+.initial button {
+  width: 20%;
+  height: 20%;
+  font-size: 3em;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  color: whitesmoke;
+  background-color: lightslategray;
+  transition: 250ms ease-in-out,  150ms ease;
+}
+
+.initial button:hover,
+.initial button:focus {
+    background: darkslategray;
+}
+
+.initial button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.initial button:active {
+    transform: scale(0.99);
+}
+
+.winnerDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  margin: 1vw;
+  text-align: center;
+}
+
+.winnerDisplay h2 {
+  transform: scale(0);
+  padding: 1vw;
+  border: 3px solid black;
+  margin: 1vw; 
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.gameDisplay {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 20vw;
+  min-height: 15vw;
+  border: 3px solid black;
+}
+
+.gameDisplay h2 {
+  font-size: 3em;
+  min-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+#player form {
+  max-width: 80%;
+  height: auto;
+  margin: 0 0 1vw 0;
+}
+
+#player button {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  min-width: 4vw;
+}
+
+#player button:hover,
+#player button:focus {
+    background: white;
+}
+
+#player button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+#player button:active {
+    transform: scale(0.99);
+}
+
+/* Footer */
